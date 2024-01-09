@@ -56,7 +56,7 @@ public class CheckoutPage : WebPage
     {
         // TODO: Move to Driver as addition to FindComponent as decoratr
         // TODO: Add addtional decorator for highlighting element
-        ((IJavaScriptExecutor)Driver).ExecuteScript("arguments[0].scrollIntoView(true);", TermsAgreeCheckbox);
+        //((IJavaScriptExecutor)Driver).ExecuteScript("arguments[0].scrollIntoView(true);", TermsAgreeCheckbox);
         TermsAgreeCheckbox.Click();
     }
 

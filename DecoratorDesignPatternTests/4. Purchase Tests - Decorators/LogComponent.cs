@@ -1,4 +1,6 @@
-﻿namespace DecoratorDesignPattern.FourthVersion;
+﻿using AngleSharp.Dom;
+
+namespace DecoratorDesignPattern.FourthVersion;
 
 public class LogComponent : ComponentDecorator
 {
@@ -44,12 +46,12 @@ public class LogComponent : ComponentDecorator
 
     public override Component FindComponent(By locator)
     {
-        throw new NotImplementedException();
+        return Element?.FindComponent(locator);
     }
 
     public override List<Component> FindComponents(By locator)
     {
-        throw new NotImplementedException();
+        return Element?.FindComponents(locator);
     }
 
     public override string GetAttribute(string attributeName)
